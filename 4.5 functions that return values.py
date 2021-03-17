@@ -1,5 +1,6 @@
 def final_amt(p, r, n, t):
-    """Apply the compound interest formula to p
+    """
+        Apply the compound interest formula to p
         to produce the final amount.
     """
 
