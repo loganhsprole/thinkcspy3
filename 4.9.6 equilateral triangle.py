@@ -25,7 +25,7 @@ def draw_equitriangle(t, sz):
     draw_poly(t, 3, sz)
 
 
-wn = make_window("lightgreen", "polygon")
+wn = make_window("lightgreen", "triangle")
 claire = make_turtle("hotpink", 3)
 draw_equitriangle(claire, 50)
 
