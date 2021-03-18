@@ -13,6 +13,7 @@ def make_turtle(colr, sz):
     t.color(colr)
     t.pensize(sz)
     t.speed(40)
+    t.shape("turtle")
     return t
 
 

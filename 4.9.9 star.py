@@ -25,5 +25,6 @@ def make_star(t):
 
 wn = make_window("white", "star")
 claire = make_turtle("black", 2)
+make_star(claire)
 
 wn.mainloop()
