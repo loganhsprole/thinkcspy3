@@ -20,9 +20,9 @@ def draw_bar(t, height, alignment):
     t.forward(height)
     if negative == True:
         t.penup()
-        t.backward(13)
+        t.backward(11)
         t.write(" " + str(height))
-        t.forward(13)
+        t.forward(11)
         t.pendown()
     else:
         t.write(" " + str(height))
@@ -52,6 +52,7 @@ for v in xs:
         artist.color("blue", "green")
         negative = False
     elif v < 0:
+        artist.color("blue", "green")
         negative = True
 
     draw_bar(artist, v, negative)
