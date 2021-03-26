@@ -1,6 +1,6 @@
 def find_hypot(b, h):
-    c = ((b ** 2) + (h ** 2)) ** 0.5
-    print(c)
+	c = ((b ** 2) + (h ** 2)) ** 0.5
+	print(c)
 
 
 base = int(input("Enter l: "))

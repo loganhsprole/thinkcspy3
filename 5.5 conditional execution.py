@@ -1,6 +1,6 @@
 x = 5
 
 if x % 2 == 0:
-    print(x, " is even.")
+	print(x, " is even.")
 else:
-    print(x, " is odd.")
+	print(x, " is odd.")
