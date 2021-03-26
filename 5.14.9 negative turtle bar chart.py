@@ -8,7 +8,7 @@ def make_window(colr, ttle):
     return w
 
 
-def make_turtle(sz):
+def make_turtle(colr, sz):
     t = turtle.Turtle()
     t.pensize(sz)
     return t
@@ -38,23 +38,23 @@ def draw_bar(t, height, alignment):
 
 
 xs = [-100, 48, 117, 200, 240, 160, 260, 220]
-wn = make_window("lightgreen", "bar chart")
-artist = make_turtle(3)
+wn = make_window(colr="lightgreen", ttle="bar chart")
+artist = make_turtle(colr="blue", sz=3)
 
 for v in xs:
     if v >= 200:
-        artist.color("blue", "red")
+        artist.fillcolor("red")
         negative = False
     elif v >= 100 and v < 200:
-        artist.color("blue", "yellow")
+        artist.fillcolor("yellow")
         negative = False
     elif v >= 0 and v < 100:
-        artist.color("blue", "green")
+        artist.fillcolor("green")
         negative = False
     elif v < 0:
-        artist.color("blue", "green")
+        artist.fillcolor("green")
         negative = True
 
-    draw_bar(artist, v, negative)
+    draw_bar(t=artist, height=v, alignment=negative)
 
 wn.mainloop()
