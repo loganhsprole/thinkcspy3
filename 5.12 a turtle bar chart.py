@@ -19,7 +19,7 @@ def draw_bar(t, height):
     t.begin_fill()
     t.left(90)
     t.forward(height)
-    t.write(' ' + str(height))
+    t.write(" " + str(height))
     t.right(90)
     t.forward(40)
     t.right(90)
@@ -29,7 +29,7 @@ def draw_bar(t, height):
     t.penup()
     t.forward(10)
     t.pendown()
- 
+
 
 xs = [48, 117, 200, 240, 160, 260, 220]
 wn = make_window("lightgreen", "bar chart")
