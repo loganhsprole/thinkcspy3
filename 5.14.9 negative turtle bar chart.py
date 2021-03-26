@@ -18,7 +18,7 @@ def draw_bar(t, height, alignment):
     t.begin_fill()
     t.left(90)
     t.forward(height)
-    if negative == True:
+    if alignment == True:
         t.penup()
         t.backward(11)
         t.write(" " + str(height))
