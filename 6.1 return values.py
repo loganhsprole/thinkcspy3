@@ -8,8 +8,7 @@ def area(radius):
     return 3.14159 * radius * radius
 
 
-a = area(2)
-print(a)
+print(area(2))
 
 
 def absolute_value(x):
@@ -18,5 +17,24 @@ def absolute_value(x):
     return x
 
 
-b = absolute_value(-2)
-print(b)
+print(absolute_value(-2))
+
+
+def bad_absolute_value(x):
+    if x < 0:
+        return -x
+    elif x > 0:
+        return x
+
+
+print(bad_absolute_value(0))
+
+
+def find_first_2_letter_word(xs):
+    for wd in xs:
+        if len(wd) == 2:
+            return wd
+    return ""
+
+
+print(find_first_2_letter_word(["this", "is", "a", "dead", "parrot"]))
