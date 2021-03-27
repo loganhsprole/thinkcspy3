@@ -7,7 +7,7 @@ def distance(x1, y1, x2, y2):
 
 def area(radius):
     return 3.14159 * radius * radius
-
+ 
 
 def area2(xc, yc, xp, yp):
     return area(distance(xc, yc, xp, yp))
